@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Animated Action Menu using Html CSS & Vanilla Javascript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="menuToggle"></div>
+    <div class="menu">
+      <ul>
+        <li style="--i:0.1s;"><a href="#"><ion-icon name="camera-outline"></ion-icon></a></li>
+        <li style="--i:0.2s;"><a href="#"><ion-icon name="settings-outline"></ion-icon></a></li>
+        <li style="--i:0.3s;"><a href="#"><ion-icon name="trash-outline"></ion-icon></a></li>
+      </ul>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const menuToggle = document.querySelector('.menuToggle');
+    menuToggle.addEventListener('click', () => menuToggle.classList.toggle('active'));
+  </script>
+</body>
+
+</html>
